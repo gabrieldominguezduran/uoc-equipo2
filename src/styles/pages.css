@@ -1,4 +1,4 @@
-main {
+.page-continer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,4 +30,18 @@ p {
 
 .team {
   margin: 5rem;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    margin: 1rem;
+  }
+
+  .team {
+    margin: 1rem;
+  }
 }

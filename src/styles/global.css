@@ -3,20 +3,16 @@
   --secondary-color: rgb(122, 237, 247);
 }
 
-html {
-  background-color: #000000;
-  font-family: Arial, sans-serif;
-}
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  max-width: 100vw;
-  line-height: 1.5;
 }
 
 /* nav styles */
@@ -31,7 +27,7 @@ a {
   align-items: center;
   padding: 5rem;
   text-decoration: none;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--secondary-color);
@@ -43,7 +39,7 @@ a {
 }
 
 .expanded {
-  display: block; /* Show links */
+  display: block;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -51,7 +47,7 @@ a {
   height: 100vh;
   transform: translate(-50%, -50%);
   background-color: rgba(179, 234, 243, 0.388);
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(90px);
   z-index: 1000;
 }
 
@@ -81,8 +77,16 @@ a {
   background-color: #dce7ec;
 }
 
-@media (min-width: 768px) {
-  a {
+@media (max-width: 768px) {
+  .expanded {
+    width: 100%;
+    height: 100%;
+  }
+
+  #closeButton {
     font-size: 3rem;
+  }
+  a {
+    font-size: 1.2rem;
   }
 }
