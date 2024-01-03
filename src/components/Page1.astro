@@ -1,0 +1,79 @@
+---
+
+---
+
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header header"
+      "content sidebar"
+      "footer footer";
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .header {
+    grid-area: header;
+    font-size: 5rem;
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+
+  .content {
+    grid-area: content;
+    background-color: #f8f8f8;
+    padding: 20px;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr 1fr auto;
+      grid-template-areas:
+        "header"
+        "content"
+        "sidebar"
+        "footer";
+    }
+  }
+</style>
+
+<main class="grid-container">
+  <div class="header">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi
+      veniam magni ipsa odio aut optio voluptatem sunt error porro!
+    </p>
+  </div>
+  <section class="content">
+    <article>
+      <p>
+        Although there have been a number of women artists, drill artists have
+        been predominantly men. The Bronx, New York, United States.
+      </p>
+      <p>
+        Originally from the streets of Chicago, United States, drill is the
+        newest subgenre of hip-hop to blow up globally...
+      </p>
+      <!-- El texto se puede seguir aquí -->
+    </article>
+    <aside class="sidebar">
+      <section>
+        <p>Ashley Peña is a Dominican-American artist based in New York...</p>
+        <!-- El texto se puede seguir aquí -->
+      </section>
+    </aside>
+  </section>
+</main>
