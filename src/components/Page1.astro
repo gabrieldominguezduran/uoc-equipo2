@@ -3,58 +3,72 @@
 ---
 
 <style>
-  .grid-container {
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
+  .page1-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
   }
 
-  .header {
-    font-size: 5rem;
+  .page1-header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    font-size: 3rem;
     background-color: black;
     color: white;
+    padding: 0.5rem;
   }
 
-  .content {
+  .page1-content {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
     background-color: #f8f8f8;
+    padding: 0.5rem;
   }
 
-  .sidebar {
-    background-color: #f2f2f2;
+  .page1-photo > img {
+    width: 100%;
   }
 
-  @media (max-width: 768px) {
-    .grid-container {
+  @media (max-width: 900px) {
+    .page1-grid {
       display: flex;
       flex-direction: column;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .page1-header {
+      font-size: 2rem;
     }
   }
 </style>
 
-<main class="grid-container">
-  <div class="header">
+<section class="page1-grid">
+  <div class="page1-header">
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi
-      veniam magni ipsa odio aut optio voluptatem sunt error porro!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque debitis
+      quidem ipsa placeat ad maxime rem reiciendis? Harum, ab dolorem quisquam
+      aspernatur, placeat doloremque similique non numquam sequi dolore quam!
     </p>
   </div>
-  <section class="content">
+  <section class="page1-content">
     <article>
       <p>
-        Although there have been a number of women artists, drill artists have
-        been predominantly men. The Bronx, New York, United States.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum,
+        distinctio minima. Aspernatur error exercitationem ut?
       </p>
       <p>
-        Originally from the streets of Chicago, United States, drill is the
-        newest subgenre of hip-hop to blow up globally...
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+        exercitationem corporis repellat eos cumque! Accusamus.
       </p>
-      <!-- El texto se puede seguir aquí -->
-    </article>
-    <aside class="sidebar">
-      <section>
-        <p>Ashley Peña is a Dominican-American artist based in New York...</p>
+      <section class="page1-photo">
+        <img
+          src="https://img.freepik.com/free-vector/circular-loading-progress-graphic_1014-6.jpg?w=826&t=st=1704365712~exp=1704366312~hmac=be58c6c960f852adb28e1c3763e7742042ea693893bc3d68d74852b742b77982"
+          alt="graffiti image"
+        />
         <!-- El texto se puede seguir aquí -->
       </section>
-    </aside>
+    </article>
   </section>
-</main>
+</section>
