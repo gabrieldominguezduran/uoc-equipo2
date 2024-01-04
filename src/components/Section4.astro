@@ -1,0 +1,102 @@
+---
+
+---
+
+<style>
+  .page4-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .page4-image1 {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+  }
+
+  .page4-image1 img {
+    width: 100%;
+  }
+
+  .text {
+    place-self: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #fff;
+  }
+
+  .page4-image2 {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .page4-image2 img {
+    width: 100%;
+  }
+
+  .page4-article {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #fff;
+  }
+
+  @media (max-width: 900px) {
+    .page4-image1 {
+      display: flex;
+      flex-direction: column;
+    }
+    .page4-image2 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+</style>
+
+<section class="page4-grid">
+  <section class="page4-image1">
+    <div>
+      <img
+        src="https://img.freepik.com/free-vector/infographic-timeline-design-template_23-2149141543.jpg?w=1380&t=st=1704377367~exp=1704377967~hmac=e2fa30486f536232f99bfd23c3018e239dcf25194e8c92d1e1dc52821c036492"
+        alt="Bar chart"
+      />
+    </div>
+    <p class="text">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+      exercitationem veritatis eum qui totam perspiciatis neque, sed esse
+      inventore velit.
+    </p>
+  </section>
+  <section class="page4-image2">
+    <div>
+      <img
+        src="https://img.freepik.com/free-vector/bar-graph_52683-9732.jpg?w=826&t=st=1704377441~exp=1704378041~hmac=9e18d3b64b7ebf235597ef6d1fb3b977ed5c4e8ad85016bba37df8327b022c56"
+        alt="Bar chart"
+      />
+    </div>
+    <p class="text">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+      exercitationem veritatis eum qui totam perspiciatis neque, sed esse
+      inventore velit.
+    </p>
+  </section>
+  <section class="page4-article">
+    <article>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+        exercitationem veritatis eum qui totam perspiciatis neque, sed esse
+        inventore velit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam
+        quos dolore voluptas excepturi, voluptates, aspernatur, nemo dolores
+        corporis necessitatibus ducimus temporibus similique nulla a totam
+        eligendi harum non cum veritatis facere iusto dicta numquam!
+      </p>
+    </article>
+  </section>
+</section>

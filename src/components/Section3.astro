@@ -1,0 +1,52 @@
+---
+
+---
+
+<style>
+  .page3-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .page3-video {
+    grid-column: 1 / 4;
+  }
+
+  .page3-video video {
+    width: 100%;
+    height: auto;
+  }
+
+  .page3-article {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #fff;
+  }
+</style>
+
+<section class="page3-grid">
+  <section class="page3-video">
+    <video controls poster="images/protest.png">
+      <source src="videos/protest.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  <section class="page3-article">
+    <article>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+        exercitationem veritatis eum qui totam perspiciatis neque, sed esse
+        inventore velit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam
+        quos dolore voluptas excepturi, voluptates, aspernatur, nemo dolores
+        corporis necessitatibus ducimus temporibus similique nulla a totam
+        eligendi harum non cum veritatis facere iusto dicta numquam!
+      </p>
+    </article>
+  </section>
+</section>

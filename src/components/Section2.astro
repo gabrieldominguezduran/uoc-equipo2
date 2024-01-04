@@ -1,0 +1,109 @@
+---
+
+---
+
+<style>
+  .page2-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .page2-header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    place-self: center;
+    font-size: 3rem;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+  }
+
+  .page2-content1 {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    font-size: 1.5rem;
+    color: #f8f8f8;
+    padding: 0.5rem;
+  }
+
+  .page2-content2 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    font-size: 1.5rem;
+    color: #f8f8f8;
+    padding: 0.5rem;
+  }
+
+  .page2-photo {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    padding: 0.5rem;
+  }
+
+  .page2-figure > img {
+    width: 100%;
+  }
+
+  @media (max-width: 900px) {
+    .page2-grid {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .page2-header {
+      font-size: 2rem;
+    }
+  }
+</style>
+
+<section class="page2-grid">
+  <div class="page2-header">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+  <section class="page2-content1">
+    <article>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam
+        recusandae saepe nesciunt quidem quam a quas maiores! Molestiae tempora
+        totam recusandae sit delectus aliquam nemo vel! Modi, omnis. Error ipsa
+        maxime quibusdam consequatur doloribus sed, dolor laudantium vero nobis,
+        corrupti dolore excepturi quae aliquid. Deserunt similique debitis
+        perspiciatis ad sed, molestiae veritatis soluta quasi maiores accusamus
+        aspernatur magnam iste laudantium aliquid possimus molestias, recusandae
+        est.
+      </p>
+    </article>
+  </section>
+  <section class="page2-photo">
+    <figure class="page2-figure">
+      <img
+        src="https://images.unsplash.com/photo-1498757581981-8ddb3c0b9b07?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Old lady portrait"
+      />
+      <figcaption>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum,
+        distinctio minima. Aspernatur error exercitationem ut?
+      </figcaption>
+    </figure>
+  </section>
+  <section class="page2-content2">
+    <p>
+      Nobis at eaque iusto harum ad omnis. Fuga facilis debitis sit esse, ipsam
+      consectetur atque ea tenetur corporis molestias excepturi doloremque
+      distinctio repudiandae quam ipsum magni tempora pariatur animi saepe est,
+      eos eligendi reprehenderit voluptas. Deserunt accusamus perferendis
+      tempore molestiae modi debitis fugiat, ratione est aliquam harum quia
+      molestias deleniti esse voluptate vitae qui rem dicta ullam eum, laborum
+      minima laudantium.
+    </p>
+    <p>
+      Beatae sed aperiam, dolores ut magni quaerat quam, molestias corporis
+      tenetur cupiditate laboriosam, fugit possimus nobis illum consequuntur
+      voluptates! Corporis cumque quia vitae?
+    </p>
+  </section>
+</section>
