@@ -15,14 +15,25 @@ import Section4 from "../components/Section4.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <title>Uoc Equipo 2</title>
   </head>
   <body>
     <Header />
     <Hero />
+    <Section3
+      video="videos/dimision_costa.mp4"
+      poster="images/poster_costa.png"
+    />
     <Section1 />
     <Section2 />
-    <Section3 />
+    <Section3
+      video="videos/reacciones.mp4"
+      poster="images/poster_reacciones.png"
+    />
     <Section4 />
     <Footer />
     <script>

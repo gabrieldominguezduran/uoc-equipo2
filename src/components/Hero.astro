@@ -10,8 +10,7 @@ import Arrow from "./Arrow.astro";
     padding: 0;
     overflow: hidden;
   }
-
-  video {
+  img {
     position: absolute;
     top: 0;
     left: 0;
@@ -19,14 +18,14 @@ import Arrow from "./Arrow.astro";
     height: 100%;
     object-fit: cover;
   }
-
   .hero-wrapper {
     display: grid;
     place-content: center;
     min-height: 100vh;
     padding: 0 1rem;
+    padding-top: 25%;
     font-family: "Oswald", sans-serif;
-    font-size: clamp(1.5rem, 16vw, 12rem);
+    font-size: clamp(1.5rem, 16vw, 5rem);
     font-weight: 700;
     text-transform: uppercase;
     color: var(--primary-color);
@@ -49,14 +48,15 @@ import Arrow from "./Arrow.astro";
 <main>
   <div class="hero">
     <section class="hero-wrapper">
-      <div class="video-wrapper">
-        <video playsinline autoplay muted loop poster="images/poster.png">
-          <source src="videos/portugal.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <div class="image-wrapper">
+        <img
+          src="images/Rebelo_de_Sousa_Antonio_Costa_20minutos.png"
+          alt="Photo of Rebelo de
+Sousa and Antonio Costa"
+        />
       </div>
-      <div class="hero-top">Portugal</div>
-      <div class="hero-bottom" aria-hidden="true">Portugal</div>
+      <div class="hero-top">Crisis en Portugal</div>
+      <div class="hero-bottom" aria-hidden="true">Crisis en Portugal</div>
     </section>
     <Arrow />
   </div>

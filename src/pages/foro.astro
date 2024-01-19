@@ -1,0 +1,59 @@
+---
+import "../styles/global.css";
+import "../styles/pages.css";
+---
+
+<style>
+  .foro textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    resize: vertical;
+  }
+  .foro button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #05828d;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  .foro button:hover {
+    background-color: var(--secondary-color);
+  }
+</style>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Foro</title>
+    <style></style>
+  </head>
+  <body>
+    <main class="page-continer">
+      <h1>Foro</h1>
+      <div class="text">
+        <p>
+          Bienvenidos al espacio de diálogo interactivo de nuestro documental
+          web: una comunidad abierta a tus ideas, opiniones y debates.
+          ¡Participa y forma parte de la conversación!
+        </p>
+        <div class="foro">
+          <textarea name="foro" cols="30" rows="10"></textarea>
+          <button>Enviar</button>
+        </div>
+      </div>
+      <a href="/">Home</a>
+    </main>
+  </body>
+</html>

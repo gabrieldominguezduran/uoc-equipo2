@@ -2,8 +2,78 @@
 
 ---
 
+<style>
+  .menu {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+
+  .menu-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem 0;
+  }
+
+  .social-links a {
+    color: #4b4b4b;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .social-links a:hover {
+    color: var(--secondary-color);
+  }
+</style>
+
 <div class="nav-links">
-  <div id="closeButton">X</div>
-  <a href="/about/">Acerca de este trabajo</a>
-  <a href="/team/">Equipo</a>
+  <div class="menu">
+    <div id="closeButton">X</div>
+    <div class="menu-logo">
+      <img src="images/logo.png" alt="Logo" width="100" height="100" />
+    </div>
+    <div class="links">
+      <a href="/foro/">Foro</a>
+      <a
+        href="https://open.spotify.com/genre/0JQ5DArNBzkmxXHCqFLx2J"
+        target="_blank">Podscast</a
+      >
+      <a href="https://www.twitch.tv/" target="_blank">live stream (Twitch)</a>
+      <a href="/about/">Acerca de este trabajo</a>
+      <a href="/team/">Equipo</a>
+      <div class="social-links">
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>

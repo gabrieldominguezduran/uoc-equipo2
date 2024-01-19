@@ -1,5 +1,5 @@
 ---
-
+const { video, poster } = Astro.props;
 ---
 
 <style>
@@ -7,6 +7,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
+  }
+
+  .page3-header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    place-self: center;
+    font-size: 3rem;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
   }
 
   .page3-video {
@@ -28,9 +38,12 @@
 </style>
 
 <section class="page3-grid">
+  <div class="page3-header">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
   <section class="page3-video">
-    <video controls poster="images/protest.png">
-      <source src="videos/protest.mp4" type="video/mp4" />
+    <video controls poster={poster}>
+      <source src={video} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   </section>
