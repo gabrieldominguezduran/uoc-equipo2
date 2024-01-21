@@ -22,10 +22,10 @@ import Arrow from "./Arrow.astro";
     display: grid;
     place-content: center;
     min-height: 100vh;
-    padding: 0 1rem;
+    padding: 0 2rem;
     padding-top: 25%;
     font-family: "Oswald", sans-serif;
-    font-size: clamp(1.5rem, 16vw, 5rem);
+    font-size: clamp(1.5rem, 14vw, 8rem);
     font-weight: 700;
     text-transform: uppercase;
     color: var(--primary-color);
@@ -44,6 +44,10 @@ import Arrow from "./Arrow.astro";
     -webkit-background-clip: text;
     transform: translateX(-0.02em);
   }
+
+  span {
+    color: #fff;
+  }
 </style>
 <main>
   <div class="hero">
@@ -55,8 +59,8 @@ import Arrow from "./Arrow.astro";
 Sousa and Antonio Costa"
         />
       </div>
-      <div class="hero-top">Crisis en Portugal</div>
-      <div class="hero-bottom" aria-hidden="true">Crisis en Portugal</div>
+      <div class="hero-top">Corrupção</div>
+      <div class="hero-bottom" aria-hidden="true">Corrupção</div>
     </section>
     <Arrow />
   </div>
